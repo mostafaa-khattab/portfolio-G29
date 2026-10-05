@@ -1,0 +1,11 @@
+h1{
+     color : #c57878;
+     background-color: black;
+}
+
+body{
+     /* background: conic-gradient(from 90deg, #c57878, #000000, #c57878); */
+    background-image: url("./car\ image.avif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
