@@ -1,0 +1,62 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* start navbar */
+.navbar {
+    background-color: #061D15;
+    font-size: 16px;
+    padding: 5px 0px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-left {
+    display: inline-block;
+    width: 25%;
+    /* background-color: tomato; */
+    font-size: 1.5em;
+    padding-left: 10px
+}
+
+.nav-center {
+    display: inline-block;
+    width: 40%;
+    /* background-color: green; */
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.nav-right {
+    display: inline-block;
+    width: 30%;
+    font-size: 1.2em;
+    text-align: right;
+}
+
+/* .parent-right{
+  
+    background-color: orange;
+    font-size: 1.2em;
+} */
+
+/* end navbar */
