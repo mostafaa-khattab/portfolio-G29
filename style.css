@@ -1,11 +1,102 @@
-h1{
-     color : #c57878;
-     background-color: black;
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
 }
 
-body{
+body {
+     /* background-image: url("./car\ image.avif"); */
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     margin: 0px;
+}
+
+section {
+     /* width: 50vw;
+     height: 100vh; */
+     font-size: 50px;
+
      /* background: conic-gradient(from 90deg, #c57878, #000000, #c57878); */
-    background-image: url("./car\ image.avif");
-    background-size: contain;
-    background-repeat: no-repeat;
-    }
+     /* background-image: url("./car\ image.avif"); */
+     /* background-position: center right; */
+     font-size: 1rem;
+     /* 60px */
+
+     width: 100%;
+}
+
+section p {
+     box-sizing: border-box;
+     color: #c57878;
+     background-color: black;
+     margin: 0px auto;
+     /* font-size: 3em; */
+     font-family: sans-serif;
+     font-weight: 700;
+     font-style: normal;
+     text-align: center;
+     /* text-decoration: double; */
+     width: 300px;
+     border: blue 50px solid;
+     padding: 50px;
+     /* border-width: 10px;
+     border-color: blue;
+     border-style: dashed; */
+}
+
+/* 
+h2 {
+     color: beige;
+     background-color: black;
+      margin-top: 40px;
+     margin-right: 45px;
+     margin-bottom: 50px;
+     margin-left: 40px; 
+     margin: 40px 45px 50px 40px;
+           top  right  bottom  left
+     padding: 20px 0px;
+} */
+
+
+
+/* h1  {
+     display: block;
+     color: green;
+     background-color: tan;
+      width: 400px;
+     height: 400px;
+} */
+
+
+a  {
+     display: inline-block;
+     background-color: red;
+     width: 100px;
+     height:100px;
+}
+
+div{
+     height: 200px;
+     width: 25%;
+     display: inline-block;
+     margin: 0px;
+     padding: 0px;
+     border: 0px solid black;
+}
+
+.bg-gray {
+     background-color: gray;
+}
+
+.bg-green {
+     background-color: green;
+}
+
+.bg-blue {
+     background-color: blue;
+}
+
+.bg-red {
+     background-color: red;
+}
