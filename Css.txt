@@ -1,4 +1,0 @@
-css -> Cascading Style Sheet
-1- inline
-2- internal
-3- external
