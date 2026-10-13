@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.div1,.div2,.div3,.div4{
+    width: 25%;
+    height: 200px;
+}
+
+.container{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
+
+    flex-flow: wrap row;
+    align-items: center;
+
+
+    justify-content: space-around;
+    /* align-content: center; */
+    /* gap: 10px 20px; */
+}
+
+.div1{
+    background-color: blue;
+    /* order: -2; */
+}
+.div2{
+    background-color: brown;
+    align-self: flex-end;
+}
+.div3{
+    background-color: orange;
+    /* order: -1; */
+}
+.div4{
+    background-color: chartreuse;
+}
+
+
+/* RWD Responsive Web Design */
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  .container {
+    background-color: green;
+  }
+}
+
+.box{
+    width: 50%;
+    background-color: teal;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+     border-radius: 15px;
+}
+
+.box:hover {
+     /*        right  top blur  sprit color  */
+    box-shadow: 5px 5px 10px  2px teal ;
+    text-shadow: 2px 2px 1px red ;
+    cursor: pointer;
+     border-radius: 20px;
+}
