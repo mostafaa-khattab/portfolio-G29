@@ -1,50 +1,50 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-a{
-    text-decoration: none;
-}
-
-li{
-    list-style: none;
-}
-
-/* start navbar */
-.navbar{
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    font-size: 2rem;
-}
-.logo{
-    /* background-color: gray; */
-    width: 10%;
-}
-.logo img{
-    width: 100%;
-}
-
-.nav-right{
-    /* background-color: teal; */
-    display: flex;
-    width: 50%;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 2px;
+body{
+    font-family: "Grechen Fuemen", cursive;
+    font-weight: 500;
 }
 
 .nav-right li a{
-    font-size: .5em ;
-    color: white;
     transition: all .5s ease-in-out;
 }
 
 .nav-right li a:hover{
-    color: #ffc800;
+    color: #ffc800 !important;
 }
 /* end navbar */
+
+/* start main */
+#home{
+    background-image: url(../images/header-bg.jpg);
+    background-position: center center;
+    /* height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
+
+.home-items h3{
+    /* font-size: 2em;
+    font-style: italic; */
+}
+.home-items h2{
+    /* font-size: 4rem;
+    margin: 20px 0px;
+    text-transform: uppercase; */
+}
+/* .home-items button{
+    background-color: #FFC800;
+    color: white;
+    padding: 5px 40px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    border: 0px solid red;
+    transition: all .2s ease-in-out;
+}
+.home-items button:hover{
+    background-color: #c59c08;
+} */
+/* end main */
+
+
