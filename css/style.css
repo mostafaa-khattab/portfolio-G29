@@ -24,6 +24,7 @@ body{
     font-size: 3rem !important;
 }
 
+/* start service */
 #service .icon-service{
     width: 100px;
     height: 100px;
@@ -44,6 +45,27 @@ body{
     box-shadow: 10px 10px 7px 1px black;
     transform: scale(1.04);
 }
+/* end service */
+
+
+/* start portfolio  */
+.img-portfolio{
+    cursor: pointer;
+    background-color: teal;
+}
+
+.img-portfolio-hover{
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+
+.img-portfolio-hover:hover{
+    opacity: 1;
+    background-color: rgba(255, 165, 0,.7);
+}
+
+/* end portfolio  */
+
 
 
 
