@@ -1,31 +1,31 @@
-body{
+body {
     /* font-family: "Grechen Fuemen", cursive; */
     font-weight: 500;
 }
 
 
-.font-1rem{
+.font-1rem {
     font-size: 1rem !important;
 }
 
-.font-1-5rem{
+.font-1-5rem {
     font-size: 1.5rem !important;
 }
 
-.font-2rem{
+.font-2rem {
     font-size: 2rem !important;
 }
 
-.font-2-5rem{
+.font-2-5rem {
     font-size: 2.5rem !important;
 }
 
-.font-3rem{
+.font-3rem {
     font-size: 3rem !important;
 }
 
 /* start service */
-#service .icon-service{
+#service .icon-service {
     width: 100px;
     height: 100px;
     /* background-color: orange; */
@@ -37,31 +37,32 @@ body{
     border-radius: 50%; */
 }
 
-#service .service-hover{
+#service .service-hover {
     transition: all .3s ease-in;
 }
 
-#service .service-hover:hover{
+#service .service-hover:hover {
     box-shadow: 10px 10px 7px 1px black;
     transform: scale(1.04);
 }
+
 /* end service */
 
 
 /* start portfolio  */
-.img-portfolio{
+.img-portfolio {
     cursor: pointer;
     background-color: teal;
 }
 
-.img-portfolio-hover{
+.img-portfolio-hover {
     opacity: 0;
     transition: all .3s ease-out;
 }
 
-.img-portfolio-hover:hover{
+.img-portfolio-hover:hover {
     opacity: 1;
-    background-color: rgba(255, 165, 0,.7);
+    background-color: rgba(255, 165, 0, .7);
 }
 
 /* end portfolio  */
@@ -70,17 +71,22 @@ body{
 
 
 
-.nav-right li a{
+.nav-right li a {
     transition: all .5s ease-in-out;
 }
 
-.nav-right li a:hover{
+.nav-right li a:hover {
     color: #ffc800 !important;
 }
+
+.navbar-nav .nav-link.active {
+    color: #ffc800 !important;
+}
+
 /* end navbar */
 
 /* start main */
-#home{
+#home {
     background-image: url(../images/header-bg.jpg);
     background-position: center center;
     /* height: 100vh;
@@ -91,15 +97,17 @@ body{
     text-align: center; */
 }
 
-.home-items h3{
+.home-items h3 {
     /* font-size: 2em;
     font-style: italic; */
 }
-.home-items h2{
+
+.home-items h2 {
     /* font-size: 4rem;
     margin: 20px 0px;
     text-transform: uppercase; */
 }
+
 /* .home-items button{
     background-color: #FFC800;
     color: white;
@@ -113,5 +121,3 @@ body{
     background-color: #c59c08;
 } */
 /* end main */
-
-

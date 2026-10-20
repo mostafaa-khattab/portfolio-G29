@@ -17,10 +17,15 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" 
+    data-bs-target="#navbar" 
+    data-bs-root-margin="0px 0px -40%" 
+    data-bs-smooth-scroll="true" 
+    tabindex="0"
+    >
 
     <!-- start navbar -->
-    <nav class="position-fixed z-3 top-0 start-0 end-0 navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav id="navbar" class="position-fixed z-3 top-0 start-0 end-0 navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand col-4 col-sm-4 col-md-2" href="#home">
                 <img src="./images/navbar-logo.svg" alt="navbar">
