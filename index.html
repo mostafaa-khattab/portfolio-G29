@@ -17,10 +17,15 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" 
+    data-bs-target="#navbar" 
+    data-bs-root-margin="0px 0px -40%" 
+    data-bs-smooth-scroll="true" 
+    tabindex="0"
+    >
 
     <!-- start navbar -->
-    <nav class="position-fixed top-0 start-0 end-0 navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav id="navbar" class="position-fixed z-3 top-0 start-0 end-0 navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand col-4 col-sm-4 col-md-2" href="#home">
                 <img src="./images/navbar-logo.svg" alt="navbar">
@@ -35,10 +40,10 @@
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#service">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -67,6 +72,166 @@
         </div>
     </main>
     <!-- end main (home) -->
+
+    <!-- start section service -->
+    <section id="service" class="min-vh-100 d-flex justify-content-center align-items-center flex-column">
+
+        <div class="text-center pt-3 mt-3">
+            <h3 class="text-uppercase font-3rem fw-bolder">Services</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content- align-content-center ">
+                <div
+                    class="col-12 col-md-4 service-hover rounded rounded-4 bg-white text-center d-flex justify-content-center align-items-center flex-column py-3">
+
+                    <div
+                        class=" icon-service bg-warning d-flex justify-content-center align-items-center font-3rem text-white rounded rounded-circle">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <h4 class="my-3">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa voluptate
+                        quibusdam. Reiciendis labore est vitae aspernatur asperiores quod recusandae!</p>
+                </div>
+
+                <div
+                    class="col-12 col-md-4 service-hover rounded rounded-4 bg-white text-center d-flex justify-content-center align-items-center flex-column py-3">
+
+                    <div
+                        class="icon-service bg-warning d-flex justify-content-center align-items-center font-3rem text-white rounded rounded-circle">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <h4 class="my-3">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa voluptate
+                        quibusdam. Reiciendis labore est vitae aspernatur asperiores quod recusandae!</p>
+                </div>
+
+                <div
+                    class="col-12 col-md-4 service-hover rounded rounded-4 bg-white text-center d-flex justify-content-center align-items-center flex-column py-3">
+
+                    <div
+                        class="icon-service bg-warning d-flex justify-content-center align-items-center font-3rem text-white rounded rounded-circle">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <h4 class="my-3">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa voluptate
+                        quibusdam. Reiciendis labore est vitae aspernatur asperiores quod recusandae!</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end section service -->
+
+    <!-- start section Portfolio -->
+     <section id="portfolio" class=" d-flex justify-content-center align-items-center flex-column pt-5 my-3">
+         <div class="text-center pt-3 mt-3">
+            <h3 class="text-uppercase font-3rem fw-bolder">Portfolio</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center ">
+
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="img-portfolio position-relative">
+                        <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/1.jpg" alt="">
+
+                        <div class="img-portfolio-hover position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-plus font-3rem text-white"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-uppercase my-3">Threads</h3>
+                    <p class="text-muted">Illustration</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="img-portfolio position-relative">
+                        <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/1.jpg" alt="">
+
+                        <div class="img-portfolio-hover position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-plus font-3rem text-white"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-uppercase my-3">Explore</h3>
+                    <p class="text-muted">Graphic Design</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="img-portfolio position-relative">
+                        <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/1.jpg" alt="">
+
+                        <div class="img-portfolio-hover position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-plus font-3rem text-white"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-uppercase my-3">Finish</h3>
+                    <p class="text-muted">Identity</p>
+                </div>
+
+
+            </div>
+
+              <div class="row justify-content-center align-items-center ">
+
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="img-portfolio position-relative">
+                        <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/1.jpg" alt="">
+
+                        <div class="img-portfolio-hover position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-plus font-3rem text-white"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-uppercase my-3">Threads</h3>
+                    <p class="text-muted">Illustration</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="img-portfolio position-relative">
+                        <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/1.jpg" alt="">
+
+                        <div class="img-portfolio-hover position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-plus font-3rem text-white"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-uppercase my-3">Threads</h3>
+                    <p class="text-muted">Illustration</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="img-portfolio position-relative">
+                        <img class="w-100" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/1.jpg" alt="">
+
+                        <div class="img-portfolio-hover position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-plus font-3rem text-white"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-uppercase my-3">Threads</h3>
+                    <p class="text-muted">Illustration</p>
+                </div>
+
+
+            </div>
+            
+        </div>
+     </section>
+    <!-- end section Portfolio -->
+
+
 
 
 

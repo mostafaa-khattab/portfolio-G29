@@ -1,19 +1,92 @@
-body{
-    font-family: "Grechen Fuemen", cursive;
+body {
+    /* font-family: "Grechen Fuemen", cursive; */
     font-weight: 500;
 }
 
-.nav-right li a{
+
+.font-1rem {
+    font-size: 1rem !important;
+}
+
+.font-1-5rem {
+    font-size: 1.5rem !important;
+}
+
+.font-2rem {
+    font-size: 2rem !important;
+}
+
+.font-2-5rem {
+    font-size: 2.5rem !important;
+}
+
+.font-3rem {
+    font-size: 3rem !important;
+}
+
+/* start service */
+#service .icon-service {
+    width: 100px;
+    height: 100px;
+    /* background-color: orange; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    border-radius: 50%; */
+}
+
+#service .service-hover {
+    transition: all .3s ease-in;
+}
+
+#service .service-hover:hover {
+    box-shadow: 10px 10px 7px 1px black;
+    transform: scale(1.04);
+}
+
+/* end service */
+
+
+/* start portfolio  */
+.img-portfolio {
+    cursor: pointer;
+    background-color: teal;
+}
+
+.img-portfolio-hover {
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+
+.img-portfolio-hover:hover {
+    opacity: 1;
+    background-color: rgba(255, 165, 0, .7);
+}
+
+/* end portfolio  */
+
+
+
+
+
+.nav-right li a {
     transition: all .5s ease-in-out;
 }
 
-.nav-right li a:hover{
+.nav-right li a:hover {
     color: #ffc800 !important;
 }
+
+.navbar-nav .nav-link.active {
+    color: #ffc800 !important;
+}
+
 /* end navbar */
 
 /* start main */
-#home{
+#home {
     background-image: url(../images/header-bg.jpg);
     background-position: center center;
     /* height: 100vh;
@@ -24,15 +97,17 @@ body{
     text-align: center; */
 }
 
-.home-items h3{
+.home-items h3 {
     /* font-size: 2em;
     font-style: italic; */
 }
-.home-items h2{
+
+.home-items h2 {
     /* font-size: 4rem;
     margin: 20px 0px;
     text-transform: uppercase; */
 }
+
 /* .home-items button{
     background-color: #FFC800;
     color: white;
@@ -46,5 +121,3 @@ body{
     background-color: #c59c08;
 } */
 /* end main */
-
-
