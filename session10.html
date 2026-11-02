@@ -5,26 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- external js -->
-    
+
 </head>
 
 <body>
-    
-    <!-- internal js -->
-    <!-- <script>
-        window.alert("Hello")
-    </script> -->
-    
-    <!-- inline js -->
-    <!-- <button onclick="window.alert('hello every one')">Hello</button> -->
-    
-    <H1 id="demo">Welcome</H1>
-    
-    
-    
-    
+
+    <style>
+        .parent{
+            background-color: rgba(0, 0, 0, 0.536);
+            border-radius: 30px;
+            box-shadow: 10px 5px 5px 2px black;
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+            width: 90%;
+        }
+
+        .parent h1{
+            background-color: tan;
+            color:black;
+            padding: 5px;
+            border-radius: 30px;
+            box-shadow: 3px 2px 5px 2px tan;
+            transition: all .7s;
+            font-family: cursive;
+        }
+
+        .parent h1:hover{
+            text-shadow: 3px 2px 5px black;
+            box-shadow: 5px 4px 5px 2px tan;
+            cursor: pointer;
+        }
+    </style>
+
+
+    <div class=" bg-dark vh-100 text-white d-flex justify-content-center align-items-center">
+        
+        <div class="parent" id="parent_show">
+            
+
+        </div>
+
+    </div>
+
+
+
     <script src="main.js"></script>
 </body>
 

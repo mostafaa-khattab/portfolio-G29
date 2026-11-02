@@ -77,14 +77,109 @@
 //     console.log("not equal");
 // }
 
-var userName = window.prompt("Enter Your Role");
-switch (userName) {
-  case "admin":
-    console.log("admin");
-    break;
-  case "user":
-    console.log("user");
-    break;
-  default:
-    console.log("error");
+// var userName = window.prompt("Enter Your Role");
+// switch (userName) {
+//   case "admin":
+//     console.log("admin");
+//     break;
+//   case "user":
+//     console.log("user");
+//     break;
+//   default:
+//     console.log("error");
+// }
+
+// var num1 = 5;
+// var num2 = 10;
+// var res1 = num1 + num2;
+// console.log(res1);
+
+// var num3 = 15;
+// var num4 = 20;
+// var res2 = num3 + num4;
+// console.log(res2);
+
+// var num5 = 30;
+// var num6 = 45;
+// var res3 = num5 + num6;
+// console.log(res3);
+
+// function sum(num1 = 0, num2 = 0) {
+//   var res = Number(num1) + Number(num2);
+//   return res;
+// }
+
+// sum(5);
+
+// function discount(price , disc){
+//   return price - (price * (disc / 100));
+// }
+
+// var price = Number( window.prompt("Enter your price: ") );
+// var disc = Number( window.prompt("Enter your discount: ") );
+// var afterDisc =  discount(price , disc);
+
+// console.log( "Original price is: ", price, "After discount price is: ", afterDisc);
+
+// var name1 = "mostafa"
+// var name2 = "ali"
+// var name3 = "abanoub"
+
+//             0          1        2
+// var names = ["habiba" , "jana" , "mariem"];
+// console.log(names.includes("h"));
+
+// console.log( names[0] );
+// console.log( names[1] );
+// console.log( names[2] );
+
+// nums.push(6)
+// nums.pop()
+// nums.unshift(2)
+// nums.shift()
+// console.log(nums.indexOf(15));
+
+//           0  1   2    3  4     5
+// console.log(nums.slice(1, 2));
+// console.log(nums.splice(1, 1));
+
+// console.log(nums);
+
+// loop ( for , while , do while)
+// var nums = [10, 15, 13, 55, 40, 80];
+
+// for( var i = 0  ; i < nums.length  ; i++   ){
+//   console.log( nums[i]  );
+// }
+
+var parent = document.getElementById("parent_show");
+
+var names = [
+  "mostafa",
+  "ali",
+  "abanoub",
+  "ahmed",
+  "eyad",
+  "mariam",
+  "habiba",
+  "jana",
+  "habiba",
+  "radwa",
+  "khadija",
+  "shahd",
+  "shrouq",
+  "hassan",
+  "mohamed",
+  "ali",
+  "alaa",
+  "menna",
+  "jovan",
+];
+
+var cartona = "";
+for (var i = 0; i < names.length; i++) {
+  // cartona = cartona + "<h1>" + names[i] + "</h1>";
+  cartona = cartona + "<img  src=' " + images[i]  + "   ' />"
 }
+
+parent.innerHTML = cartona;
