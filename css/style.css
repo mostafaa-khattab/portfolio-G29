@@ -1,8 +1,29 @@
+/* light */
+:root {
+    --bg: #f1f1f1;
+    --text: black;
+}
+
+/* dark */
+.dark-mood {
+    --bg: rgb(25, 24, 24);
+    --text: white;
+}
+
 body {
     /* font-family: "Grechen Fuemen", cursive; */
     font-weight: 500;
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+    transition: all .5s;
 }
 
+#toggle-theme {
+    padding: 5px 15px;
+    border: 0px transparent solid;
+    border-radius: 30px;
+    cursor: pointer;
+}
 
 .font-1rem {
     font-size: 1rem !important;
@@ -39,6 +60,12 @@ body {
 
 #service .service-hover {
     transition: all .3s ease-in;
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+#service .service-hover p {
+    color: var(--text) !important;
 }
 
 #service .service-hover:hover {
