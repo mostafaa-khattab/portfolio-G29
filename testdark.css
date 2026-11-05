@@ -1,0 +1,38 @@
+/* light */
+:root {
+    --bg: #f1f1f1;
+    --text: black;
+}
+
+/* dark */
+.dark-mood {
+    --bg: rgb(25, 24, 24);
+    --text: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: all .5s;
+}
+
+button {
+    padding: 5px 15px;
+    border: 0px transparent solid;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    text-shadow: 5px 2px 3px green;
+}
+
+.dark-mood h1 {
+    text-shadow: 5px 2px 3px red;
+}

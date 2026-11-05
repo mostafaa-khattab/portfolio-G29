@@ -192,7 +192,7 @@ function welcome() {
   var fn_ls = document.getElementById("fn_ls");
 
   var rgx = /^[A-Za-z][a-z]{2,15}$/;
-  var rgx_email = /^[^@]+@[^@]+\.[^@]+$/
+  var rgx_email = /^[^@]+@[^@]+\.[^@]+$/;
 
   if (rgx.test(fn.value)) {
     fn.classList.add("is-valid");
@@ -215,9 +215,56 @@ function welcome() {
   }
 }
 
+// let x = "b";
+// let y = "a"
+
+// console.log(x + y + +y +y);
+
+// object
+var user = {
+  name: "radwa",
+  age: 25,
+  is_success: true,
+};
 
 
-let x = "b";
-let y = "a"
+// Object.freeze(user) // بتمنع اي تعديل او حذف او اضافه
+// Object.seal(user) // تمنع الاضافه فقط
+// Object.preventExtensions(user)
 
-console.log(x + y + +y +y);
+// user.degree = 100;
+// user.name = "ali";
+// delete user.age;
+
+// console.log(user);
+
+
+// delete user.is_success
+// user["degree"] = 100;
+// user.degree = "";
+// user.age = 20;
+
+var dis_product = document.getElementById("dis_product");
+
+var products = [
+  {name: "mobile" , price: 3000 , is_sale:true , Qun : 5},
+  {name: "laptop" , price: 5000 , is_sale:false , Qun : 5},
+  {name: "tablet" , price: 7000 , is_sale:true , Qun : 5},
+  {name: "tablet" , price: 7000 , is_sale:true , Qun : 5},
+]
+
+var cartona = "";
+for( var i = 0  ; i < products.length   ; i++ ){
+  
+  cartona = cartona + `<div class="col-4 product-card" >
+                            <img class="w-100" src="../car image.avif" alt="" />
+                            <h2>Product Name : ${products[i].name}</h2>
+                            <p> price : ${products[i].price}</p>
+                            <div class="is_sall ${ products[i].is_sale ? 'd-block' : 'd-none'  }  ">${products[i].is_sale}</div>
+                        </div>`
+
+}
+
+dis_product.innerHTML = cartona
+
+// console.log(products[1].price);
