@@ -152,34 +152,72 @@
 //   console.log( nums[i]  );
 // }
 
-var parent = document.getElementById("parent_show");
+// var parent = document.getElementById("parent_show");
 
-var names = [
-  "mostafa",
-  "ali",
-  "abanoub",
-  "ahmed",
-  "eyad",
-  "mariam",
-  "habiba",
-  "jana",
-  "habiba",
-  "radwa",
-  "khadija",
-  "shahd",
-  "shrouq",
-  "hassan",
-  "mohamed",
-  "ali",
-  "alaa",
-  "menna",
-  "jovan",
-];
+// var names = [
+//   "mostafa",
+//   "ali",
+//   "abanoub",
+//   "ahmed",
+//   "eyad",
+//   "mariam",
+//   "habiba",
+//   "jana",
+//   "habiba",
+//   "radwa",
+//   "khadija",
+//   "shahd",
+//   "shrouq",
+//   "hassan",
+//   "mohamed",
+//   "ali",
+//   "alaa",
+//   "menna",
+//   "jovan",
+// ];
 
-var cartona = "";
-for (var i = 0; i < names.length; i++) {
-  // cartona = cartona + "<h1>" + names[i] + "</h1>";
-  cartona = cartona + "<img  src=' " + images[i]  + "   ' />"
+// var cartona = "";
+// for (var i = 0; i < names.length; i++) {
+//   // cartona = cartona + "<h1>" + names[i] + "</h1>";
+//   cartona = cartona + "<img  src=' " + images[i]  + "   ' />"
+// }
+
+// parent.innerHTML = cartona;
+
+// Event
+
+function welcome() {
+  var fn = document.getElementById("fn");
+  var ls = document.getElementById("ls");
+  var fn_ls = document.getElementById("fn_ls");
+
+  var rgx = /^[A-Za-z][a-z]{2,15}$/;
+  var rgx_email = /^[^@]+@[^@]+\.[^@]+$/
+
+  if (rgx.test(fn.value)) {
+    fn.classList.add("is-valid");
+    fn.classList.remove("is-invalid");
+
+    if (rgx.test(ls.value)) {
+      ls.classList.add("is-valid");
+      ls.classList.remove("is-invalid");
+
+      var res = fn.value + " " + ls.value;
+
+      fn_ls.innerText = res;
+    } else {
+      ls.classList.add("is-invalid");
+      ls.classList.remove("is-valid");
+    }
+  } else {
+    fn.classList.add("is-invalid");
+    fn.classList.remove("is-valid");
+  }
 }
 
-parent.innerHTML = cartona;
+
+
+let x = "b";
+let y = "a"
+
+console.log(x + y + +y +y);

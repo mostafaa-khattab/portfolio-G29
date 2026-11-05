@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <label for="fn">First Name</label>
+        <input id="fn" type="text" class="form-control">
+        <div id="vaild-fn" class="invalid-feedback">
+            Please Enter First Ch Capitalize and Small Ch
+        </div>
+
+
+        <label for="ls" class="mt-3">Last Name</label>
+        <input id="ls" type="text" class="form-control">
+        <div id="vaild-fn" class="invalid-feedback">
+            Please Enter First Ch Capitalize and Small Ch
+        </div>
+
+        <button onclick="welcome()" class="btn btn-outline-success mt-3">Go</button>
+
+
+        <div class="bg-secondary mt-3 text-white text-center py-2 rounded-5">
+            <h1>Welcome <span class="text-warning" id="fn_ls"> </span></h1>
+        </div>
+    </div>
+
+
+
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
